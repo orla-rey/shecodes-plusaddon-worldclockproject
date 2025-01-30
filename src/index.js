@@ -44,6 +44,7 @@ function updateTime() {
   }
 }
 
+
 function updateCity(event) {
   let cityTimezone = event.target.value;
   if (cityTimezone === "current") {
@@ -62,11 +63,14 @@ function updateCity(event) {
   </div>
   <a href="/">All Cities</a>
   `;
-}
+};
+
 
 updateTime();
 setInterval(updateTime, 1000);
 
+
 let citiesSelectElement = document.querySelector("#city-select");
 
 citiesSelectElement.addEventListener("change", updateCity);
+
